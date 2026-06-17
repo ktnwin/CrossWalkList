@@ -4,13 +4,14 @@
 //
 //  Created by Paul Inventado on 3/16/22.
 //
-
+ 
 import SwiftUI
 
 struct ContentView: View {
     // TODO: Replace @State with @SceneStorage
-    @State var crosswalkName: String = ""
-    @State var crosswalkAddress: String = ""
+    /* Retains value after reopening the application */
+    @SceneStorage("crosswalkName") var crosswalkName: String = ""
+    @SceneStorage("crosswalkAddress") var crosswalkAddress: String = ""
     
     @AppStorage("sizeMultiplier") var sizeMultiplier = 1.0
     
