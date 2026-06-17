@@ -68,7 +68,7 @@ struct ContentView: View {
                     Spacer()
                     // TODO: Replace destination to other CrosswalkInfo variations
                     NavigationLink {
-                        CrossWalkInfo()
+                        CrossWalkInfoWithLinks()
                     } label: {
                         Text("ℹ️ Information about crosswalks")
                     }

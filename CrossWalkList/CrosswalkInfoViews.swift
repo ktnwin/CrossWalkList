@@ -33,7 +33,7 @@ struct CrossWalkInfo: View {
 
 struct CrossWalkInfoWithLinks: View {
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
                 List {
                     Section(header: Text("Crosswalk")) {
