@@ -9,10 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     // TODO: Replace @State with @SceneStorage
-    /* Retains value after reopening the application */
+    /* Retains value after reopening the application
+     '@SceneStorage' changes are only accessible within this view */
     @SceneStorage("crosswalkName") var crosswalkName: String = ""
     @SceneStorage("crosswalkAddress") var crosswalkAddress: String = ""
     
+    /* '@AppStorage' changes are accessible in ANY view
+     Only works with basic data types */
     @AppStorage("sizeMultiplier") var sizeMultiplier = 1.0
     
     var body: some View {
